@@ -1,0 +1,7 @@
+/vendor/
+.env
+node_modules/
+.ddev/
+.vscode/
+composer.lock
+phpstan.neon

@@ -1,0 +1,12 @@
+{
+  "autoload": {
+    "psr-4": {
+      "Helpers\\": "Helpers/",
+      "Src\\": "src/"
+    }
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^2.1",
+    "phpmd/phpmd": "^2.15"
+  }
+}
