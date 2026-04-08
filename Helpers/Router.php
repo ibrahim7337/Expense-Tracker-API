@@ -15,7 +15,7 @@ class Router
      * Summary of get
      * @param mixed $path
      * @param mixed $action
-     * 
+     *
      * @return void
      */
     public static function get(mixed $path, mixed $action): void
@@ -27,7 +27,7 @@ class Router
      * Summary of post
      * @param mixed $path
      * @param mixed $action
-     * 
+     *
      * @return void
      */
     public static function post(mixed $path, mixed $action): void
@@ -39,7 +39,7 @@ class Router
      * Summary of dispatch
      * @param mixed $method
      * @param mixed $uri
-     * 
+     *
      * @return void
      */
     public static function dispatch(mixed $method, mixed $uri): void
@@ -49,8 +49,8 @@ class Router
         if (!is_string($path)) {
             http_response_code(400);
             echo json_encode([
-                "status" => "error",
-                "message" => "Route not found"
+                'status' => 'error',
+                'message' => 'Route not found',
             ]);
             return;
         }

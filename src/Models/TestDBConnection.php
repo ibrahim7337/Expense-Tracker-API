@@ -15,12 +15,12 @@ class TestDBConnection
 
             return json_encode([
                 'status' => 'success',
-                'message' => 'Database connection successfully'
+                'message' => 'Database connection successfully',
             ]);
         } catch (Exception $e) {
             return json_encode([
                 'status' => 'error',
-                'message' => $e->getMessage()
+                'message' => $e->getMessage(),
             ]);
         }
     }

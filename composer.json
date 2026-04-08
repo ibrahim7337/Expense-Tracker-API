@@ -8,13 +8,19 @@
   },
   "require-dev": {
     "phpstan/phpstan": "^2.1",
-    "phpmd/phpmd": "^2.15"
+    "phpmd/phpmd": "^2.15",
+    "friendsofphp/php-cs-fixer": "^3.94"
   },
   "require": {
     "vlucas/phpdotenv": "^5.6"
   },
   "scripts": {
     "phpstan": "phpstan analyse src config Helpers --level=8",
-    "phpmd": "phpmd src config Helpers text cleancode,codesize,design,naming"
+    "phpmd": "phpmd src,config,Helpers text cleancode,codesize,design,naming",
+    "fix": "php-cs-fixer fix",
+    "analyse": [
+      "@phpstan",
+      "@phpmd"
+    ]
   }
 }

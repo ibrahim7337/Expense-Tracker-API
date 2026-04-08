@@ -7,8 +7,8 @@ class TestController
     public function index()
     {
         return json_encode([
-            "status" => "ok",
-            "message" => "API is working"
+            'status' => 'ok',
+            'message' => 'API is working',
         ]);
     }
 }
