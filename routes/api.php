@@ -1,6 +1,6 @@
 <?php
 
-use App\Controllers\AuthController;
+use Src\Controllers\AuthController;
 use Helpers\Router;
 use Src\Controllers\TestController;
 use Src\Models\TestDBConnection;
