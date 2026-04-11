@@ -55,6 +55,15 @@ class Router
             return;
         }
 
+        if (!isset(self::$routes[$method][$path])) {
+            http_response_code(404);
+            echo json_encode([
+                'status' => 'error',
+                'message' => 'Route not found',
+            ]);
+            return;
+        }
+
         $action = self::$routes[$method][$path];
 
         [$controller, $methodName] = $action;
